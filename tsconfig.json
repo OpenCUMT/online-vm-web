@@ -4,6 +4,7 @@
     "moduleResolution": "bundler",
     "baseUrl": ".",
     "paths": {
+      "@local/*": ["third_parties/*"],
       "@/*": ["src/*"]
     }
   },
