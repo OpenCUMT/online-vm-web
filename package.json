@@ -1,0 +1,21 @@
+{
+  "name": "shining-star",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "format": "biome check --write",
+    "lint": "biome lint",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^5.12.8",
+    "@tailwindcss/vite": "^4.1.11",
+    "tailwindcss": "^4.1.11"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.1.3"
+  }
+}
