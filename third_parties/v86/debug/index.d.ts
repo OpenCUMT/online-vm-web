@@ -1,1 +1,1 @@
-export * from "../src/v86.d.ts"
+export * from "../src/v86.d.ts";
