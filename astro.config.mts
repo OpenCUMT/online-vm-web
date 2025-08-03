@@ -15,13 +15,14 @@ export default defineConfig({
       tailwindcss() as any,
     ],
     server: {
-      // proxy: {
-      //   "/runtime": {
-      //     target: "https://ctf.cumt.edu.cn/vm",
-      //     changeOrigin: true,
-      //     ws: true,
-      //   }
-      // }
+      proxy: {
+        "/runtime": {
+          target: import.meta.env.VITE_PROXY || "https://ctf.cumt.edu.cn/vm/runtime",
+          changeOrigin: true,
+          ws: true,
+          rewrite: (path) => path.replace(/^\/runtime/, ""),
+        }
+      }
     },
   },
 });
